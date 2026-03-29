@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Premier Site</title>
+    <style>
+        /* Le CSS : On gère le look ici */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .card {
+            background: white;
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: background 0.3s;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <h1>Hello World ! 🚀</h1>
+        <p>Ceci est le début de mon aventure en programmation.</p>
+        <button onclick="saluer()">Clique ici</button>
+        <p id="message-secret" style="margin-top: 20px; font-weight: bold; color: #28a745;"></p>
+    </div>
+
+    <script>
+        /* Le JavaScript : On gère l'action ici */
+        function saluer() {
+            const message = "Bravo ! Tu viens d'exécuter ton premier script.";
+            document.getElementById('message-secret').innerText = message;
+            console.log("Le bouton a été cliqué !");
+        }
+    </script>
+
+</body>
+</html>
